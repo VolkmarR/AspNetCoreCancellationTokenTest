@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Site Example</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/site.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .api-link {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .api-link:hover {
+            background-color: #45a049;
+        }
+        #weather-data {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9f7ef;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Static Site Example</h1>
+    <div class="content">
+        <p>This is a simple static HTML page being served from the wwwroot directory in your ASP.NET Core application.</p>
+        <p>You can add more static content like CSS, JavaScript, images, and other HTML files in the wwwroot directory.</p>
+        <p>Your API endpoints are still accessible alongside this static content.</p>
+        <button id="fetch-weather" class="api-link">Fetch Weather Data with Axios</button>
+        <div id="weather-data"></div>
+    </div>
+</body>
+</html>
